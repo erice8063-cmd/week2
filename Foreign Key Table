@@ -23,3 +23,14 @@ CREATE TABLE transactions (
   SELECT * FROM transactions; 
 
 Credit: https://youtu.be/rFssfx37UJw
+
+CREATE TABLE Employee (
+ID int PRIMARY KEY,
+Name varchar(40) NOT NULL,
+Dept_Code int,
+Salary int,
+CONSTRAINT FK_Dept FOREIGN KEY (Dept_Code)
+REFERENCES Dept(Dept_Code)
+);
+
+Credit: https://youtu.be/MR0PK0qkCD8
